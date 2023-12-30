@@ -1,0 +1,300 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html,body{
+    overflow-x: hidden;
+}
+/*########################## START OF NAVBAR ###########################*/
+nav{
+    background-color: #333;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 0 100px;
+}
+.logo{
+    font-size: 40px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+ul li{
+    list-style-type: none;
+    line-height: 0px;
+}
+ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 23px;
+    padding: 8px 20px;
+    margin-bottom: 50px;
+    border-radius: 50px;
+    transition: all .5s;
+}
+ul li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+.menu{
+    font-size: 35px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+
+/*########################## START OF HOME PAGE ###########################*/
+.home_section{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 0 90px;
+    justify-content: space-between;
+}
+.firstpic{
+    height: 300px;
+    width: 300px;
+    border-radius: 300px;
+    border: 7px solid;
+}
+.hometext{
+    font-size: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h5{
+    font-size: 40px;
+}
+strong{
+    font-size: 45px;
+}
+p{
+    font-weight: 600;
+}
+
+/*########################## START OF ABOUT PAGE ###########################*/
+.about_section{
+    background: url(https://cdn.create.vista.com/api/media/small/592805030/stock-video-programming-web-code-animation?videoStaticPreview=true&token=);
+    background-position: center;
+    background-size: cover;
+    background-color: #000;
+    color: #fff;
+    height: 130vh;
+}
+.about{
+    display: flex;
+    align-items: center;
+    padding: 70px 80px;
+}
+.about_me{
+    font-size: 50px;
+    text-align: center;
+    padding-top: 100px;
+}
+.aboutpic{
+    height: 350px;
+    border: 3px solid #fff;
+    border-radius: 20px;
+}.abouttext{
+    padding: 90px;
+    line-height: 45px
+}
+
+/*########################## START OF SKILLS PAGE ###########################*/
+.skills_section{
+    height: 110vh;
+    padding-left: 90px;
+    line-height: 35px;
+    font-size: 20px;
+    background: url(skills\ image.webp);
+    background-position: center;
+    background-size: cover;
+    color: #FFFAFA;
+}
+.skills{
+    text-align: center;
+    font-size: 50px;
+    padding-top: 100px;
+}
+.h4skills{
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+.h3skills{
+    font-size: 30px;
+}
+
+
+/*########################## START OF CONTACT PAGE ###########################*/
+.contact{
+    height: 130vh;
+    margin: 50px;
+    line-height: 70px;
+}
+.h4contact{
+    font-size: 40px;
+    text-align: center;
+    padding-top: 100px;
+}
+.h3contact{
+    font-size: 30px;
+    text-align: center;
+}
+input{
+    width: 100%;
+    padding: 20px;
+    border-radius: 19px;
+    border: 1.5px solid #333;
+    outline: none;
+    margin-bottom: 20px;
+}
+textarea{
+    width: 100%;
+    height: 70px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1.5px solid #333;
+    outline: none;
+    margin-bottom: 10px;
+}
+textarea:focus{
+    width: 100%;
+    height: 250px;
+}
+button{
+    display: block;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px 30px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+    transition: all .7s;
+}
+button:hover{
+    background-color: #fff;
+    color: #000;
+    border: 1.5px solid #000;
+}
+
+/*########################## START OF FOOTER ###########################*/
+.footer{
+    background-color: #333;
+    color: #fff;
+    height: 120px;
+    text-align: center;
+    line-height: 2.5rem;
+}
+.h5footer{
+    padding: 10px;
+}
+
+
+/*########################## START OF MEDIA QUERY FOR MOBILE PHONE ###########################*/
+
+@media screen and (max-width:600px){c
+    /* nav bar on mobile view */
+
+    nav{
+        padding: 0 20px;
+        height: 90px;
+    }
+    #menulist{
+        padding-top: 0px;
+    }
+    .menu{
+        display: block;
+    }
+    ul{
+        position: absolute;
+        padding-top:0px ;
+        top: 90px;
+        right: 0%;
+        left: 0%;
+        flex-direction: column;
+        text-align: center;
+        background-color: #333;
+        height: 50%;
+        overflow: hidden;
+        
+    }
+    ul li a{
+        transition: all .5s;
+    }
+    ul li a:hover{
+        background-color: #333;
+    }
+
+
+    /*##### home page on mobile view #####*/
+    .home_section{
+        display: flex;
+        flex-direction: column;
+        padding: 7px;
+        height: 100vh;
+    }
+    strong{
+        font-size: 30px;
+    }
+    .h5home{
+        font-size: 25px;
+    }
+    .hometext{
+        font-size: 20px;
+        line-height: 3rem;
+    }
+
+
+    /*##### about page on mobile view #####*/
+    .about_section{
+        height: 155vh;
+        
+    }
+    .about{
+        padding: 10px;
+        height: 100vh;
+        display: block;
+        flex-wrap: wrap;
+    }
+    .abouttext{
+        padding: 10px;
+        width: 100%;
+    }
+    .aboutpic{
+        width: 70%;
+        margin: 40px;
+    }
+
+
+    /* skills page on mobile view */
+    .skills_section{
+        height: 150vh;
+        margin:10px;
+        padding: 10px;
+        font-size: 20px;
+    }
+    .skills,.h4skills,.h3skills{
+        font-size: 35px;
+        text-wrap: wrap;
+        line-height: 5dvh;
+    }
+}
+
+
+@media screen and (max-width:900px){
+    nav{
+        padding: 0 50px;
+    }
+}

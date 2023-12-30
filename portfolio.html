@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="shortcut icon" href="logo-black.png" type="image/x-icon">
+</head>
+<body>
+    <!---------------- start of navbar --------------->
+
+    <nav>
+        <div class="logo">Aadil</div>
+        <ul id="menulist">
+            <br>
+            <li><a href="#home" class="active">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#skills">skills</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+            <div class="menu" onclick=" togglemenu()">&#8801;</div>
+    </nav>
+
+        <!---------------- start of home --------------->
+
+        <section class="home_section" id="home">
+            <div class="hometext">
+                <h5 class="h5home">Hello am <strong>Aadil Nuhu</strong><br>
+                And am a <strong>Software Developer</strong></h5>
+                <p>With strong background in HTML,CSS,JAVASCRIPT,
+                    PYTHON and MYSQL.
+                </p>
+            </div>
+                <img src="my pic.jpg" alt="A picture of me" class="firstpic">
+        </section>
+
+        <!---------------- start of about --------------->
+
+        <section class="about_section" id="about">
+            <h5 class="about_me">About Me</h5>
+            <div class="about">
+                <img src="my pic2.png" alt="my picture" class="aboutpic">
+                <p class="abouttext">Passionate about creating Web Pages with HTML,
+                    CSS and JAVASCRIPT. I have years of Experience 
+                    and many Clients are happy with the projects carried out.
+                    I also enjoy creating projects and reading Tech related content.
+                </p>
+            </div>
+        </section>
+
+        <!---------------- start of skills --------------->
+
+        <section class="skills_section" id="skills">            
+            <h5 class="skills">Skills</h5>
+                <h4 class="h4skills">Technical Skills</h4>
+                    <h3 class="h3skills">Programing languages:</h3>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                    <h3 class="h3skills">Frameworks:</h3>
+                        <li>React</li>  
+                        <li>Bootstrap</li> 
+                    <h3 class="h3skills">Database:</h3>
+                        <li>MySQL</li>
+                    <h3 class="h3skills">Soft Skills:</h3>
+                        <li>Communication - Effective verbal and written Communication.</li>
+                        <li>Problem Solving - Analytical thinking and creative problem solving.</li>
+                        <li>Teamwork - Collaborative and adaptable in team.</li>
+                        <li>Time Management - Efficiently manage time.</li>
+        </section>
+
+                <!---------------- start of contact --------------->
+
+        <section class="contact" id="contact">
+            <h4 class="h4contact">Contact Me!</h4>
+            <h3 class="h3contact">Let's Talk About Your Project</h3>
+            <form action="#">
+                <label for="fname">First Name:</label>
+                <input type="text" name="" placeholder="Enter First Name" required>
+                <label for="fname">Last Name:</label>
+                <input type="text" name="" placeholder="Enter Last Name" required>
+                <label for="fname">Email:</label>
+                <input type="email" name="" placeholder="Enter Email" required>
+                <textarea id="" placeholder="Write Your Message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <!---------------- start of footer --------------->
+    
+        <section class="footer">
+            <h5 class="h5footer">Aadil</h5>
+            <p class="pfooter">&#169;2023 copyright | All right reserved</p>
+        </section>
+
+
+    <script src="portfolio.js"></script>
+</body>
+</html>
